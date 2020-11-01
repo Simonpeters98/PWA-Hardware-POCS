@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+
+    
+  </head>
+  <body>
+    
+    <div>
+      
+      <h1>This is my refresher PWA</h1>
+      <p>Let's get coding</p>
+
+      <hr/>
+
+     <!--<button onclick="getLocation()">Fetch your coordinates</button>
+
+      <p id="demo"></p>
+
+      <div id="map"></div>
+      
+    </div>--> 
+<div class="rounded">
+    <button id="install-bt" onclick="installPWA()">Install PWA</button>
+  </div>
+<div class="container">
+  <h1>Location capabilities</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <a href="/location.html">GPS google maps demo</a>
+  </div>
+
+  <div class="container">
+  <h1>Vibration capabilities</h1>
+  <p><b><i>*Make sure your mobile device is not in silent mode, otherwise it wont work</i></b></p>
+  <button class="vibrate-btn" onclick="vibrate(100)">Vibrate a single time</button><br>
+  <button class="vibrate-btn" onclick="vibratePattern()">Vibrate the James Bond theme</button>
+
+  </div>
+
+    <div class="container">
+  <h1>Audio record and playback capabilities</h1>
+  <p><b><i>Talk for 3 seconds, then you will hear your recording played back.</i></b></p>
+   <button class="vibrate-btn" id="action" onclick="handleAction()">Start recording...</button>
+  </div>
+
+
+
+        <div class="container">
+           <h1>Video playback capabilities</h1><br>
+
+  
+    <video controls autoplay style="height:180px; width: 240px;"></video>
+  <p><button class="vibrate-btn" type="button" onclick="getStream('video')">Grab video</button></p>
+    
+  </div>
+
+  </body>
+
+  <script src="script.js"></script>
+    <script src="vibrate.js"></script>
+        <script src="record.js"></script>
+                <script src="record.js"></script>
+                        <script src="recordVid.js"></script>
+
+
+    
+</html>
